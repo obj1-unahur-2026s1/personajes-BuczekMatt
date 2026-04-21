@@ -1,9 +1,9 @@
-import example.pepita
+import armas.*
+import elementos.*
+import jugadora-y-personajes.*
 
-describe "group of tests for pepita" {
-
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+//describe "El programa debe resolver el encuentro entre un personaje y un elemento" {
+  test "Mario es feliz luego de encontra un elemento" {
+    mario.encontrar(castillo)
+    assert.that( mario.esFeliz())
   }
-
-}
